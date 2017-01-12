@@ -18,7 +18,7 @@ public class FabricaConexoes {
 			if(con == null || con.isClosed()){
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 			con = DriverManager.getConnection(
-					"jdbc:oracle:thin:@186.249.13.156:1521:xe", "USER_BD", "SENHA_USER_BD");
+					"jdbc:oracle:thin:@ENDERECO_BD", "USER_BD", "SENHA_USER_BD");
 			}
 	} catch (SQLException | ClassNotFoundException e) {
 
